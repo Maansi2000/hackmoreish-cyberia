@@ -1,0 +1,285 @@
+.content {
+	  text-align: justify;
+	  /* border: 1px solid #f0f0f0; */
+	  font-size: 18px;
+	  /* padding-left: 0; */
+	  margin-bottom: 30px;
+
+    /* font-family: 'raleway'; */
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding:13px;
+  
+}
+
+.content li:first-child,
+.content li:last-child {
+	  padding: 20px 0px 0px 0px;
+}
+.content li {
+	  list-style: none;
+	  padding-top: 7px;
+	  padding-bottom: 7px;
+
+}
+
+.content h2 {
+	  font-size: 36px;
+}
+
+
+
+/* Title Color Green*/
+.p-green h2,
+.p-green h3 {
+	  color: #5cb85c;
+}
+/* Button Color Green*/
+.p-green button {
+	  background: #5cb85c;
+}
+
+
+
+
+/* Button Color Red */
+.p-red button {
+	  background: #920c07;
+  }
+/* Title Color Red */
+.p-red h2,
+.p-red h3 {
+	  color: #920c07;
+  }
+
+
+
+
+
+
+.btn-outline {
+    color: inherit;
+    transition: all .5s;
+      background-color:transparent;
+
+}
+
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+      background-color:transparent;
+
+}
+
+.btn-danger.btn-outline {
+    color: #920c07;
+    background-color:transparent;
+}
+
+.btn-success.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
+.btn-outline.btn-lg {
+    background-color: transparent;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.btn-danger{
+      background-color: transparent;
+       padding-left: 0px;
+    padding-right: 0px; 
+    color:transparent;
+}
+
+.btn.btn-round {
+  border-radius: 250px;
+  border-radius: 100%;
+        padding: 2px;
+        margin: 0 4px 0 0;
+        top: 0;
+        font-size: 10px;
+        text-align: center;
+    background-color:transparent;
+    max-width:50px;
+    max-height:100%;
+}
+
+.text{
+  color:#000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size:18px;
+}
+
+.relative{
+  position: relative;
+}
+
+#thinking{
+  position: absolute;
+  top: 300px;
+  width: 50vw;
+}
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 80px;
+  bottom: 90px;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline-heading {
+  width: 70%;
+}
+
+
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.flex-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
