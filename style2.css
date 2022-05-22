@@ -1,0 +1,116 @@
+
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --bg: #97165b;
+    --s-bg: black;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  header {
+    background:
+      linear-gradient(to bottom, transparent, var(--bg) 75%);
+    height: 25%;
+  }
+
+  .icon{
+      font-size: 30px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      color: cyan;
+  }
+  
+  main {
+    background-color: var(--bg);
+    height: 100%;
+    display: flex;
+    gap: 1%;
+  }
+  
+  aside {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 25%;
+    max-width: 14%;
+    margin-left: 2%;
+    box-shadow: 0 0 5px black;
+    padding-inline: 1%;
+    text-align: center;
+    border-radius: 6px;
+  }
+  
+  hr {
+    background: currentcolor;
+  }
+  
+   #open {
+    padding: 10%;
+    margin-block: 10%;
+    border: 3px solid cyan;
+    background-color: black;
+    border-radius: 6px;
+    transition: border-color 500ms;
+  }
+  
+  #open:hover {
+    border-color: green;
+  }
+  
+  #content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #post {
+    display: flex;
+    gap: 2%;
+    background: var(--s-bg);
+    max-height: 100px;
+    width: 95%;
+    box-shadow: 0 0 5px black;
+    padding: 1%;
+    flex-direction: row;
+    border-radius: 6px;
+  }
+  
+  #placeholder {
+    align-self: center;
+    color: gray;
+  }
+  
+  
+  article {
+    background: var(--s-bg);
+    max-width: 95%;
+    box-shadow: 0 0 5px black;
+    padding: 1%;
+    border-radius: 12px;
+    border: 7px solid white;
+  }
+  
+  article p {
+    line-height: 150%;
+  }
+  
+  aside p {
+    line-height: 150%;
+  }
